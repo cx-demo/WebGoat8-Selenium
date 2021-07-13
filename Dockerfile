@@ -5,4 +5,4 @@ ENV ENV_AUT_PORT=8080
 
 ADD target/WebGoat-Selenium.jar .
 
-RUN java -jar ./WebGoat-Selenium.jar -host ${ENV_AUT_URL} -port ${ENV_AUT_PORT} -chrome -driver /usr/bin/chromedriver -headless -un webgoat -pw webgoat
+CMD java -jar ./WebGoat-Selenium.jar -host ${ENV_AUT_URL} -port ${ENV_AUT_PORT} -chrome -driver /usr/bin/chromedriver -headless -un webgoat -pw webgoat
